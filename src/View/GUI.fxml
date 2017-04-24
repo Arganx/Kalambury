@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.GUI_Controller">
+   <children>
+      <Canvas fx:id="canvas" height="500.0" layoutX="50.0" layoutY="50.0" width="700.0" AnchorPane.topAnchor="50.0" />
+      <ButtonBar layoutX="14.0" layoutY="14.0" maxWidth="600.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="500.0" AnchorPane.topAnchor="7.0">
+         <buttons>
+            <ColorPicker fx:id="colorpicker" />
+            <Button fx:id="czysc" maxWidth="60.0" minWidth="60.0" mnemonicParsing="false" onAction="#clearhandle" prefWidth="60.0" text="Wyczysc" />
+            <Slider fx:id="font" majorTickUnit="20.0" maxWidth="500.0" min="1.0" minWidth="500.0" minorTickCount="2" prefWidth="500.0" showTickLabels="true" showTickMarks="true" value="1.0" />
+            <Label fx:id="fontsize" text="Rozmiar: 1" />
+         </buttons>
+      </ButtonBar>
+   </children>
+</AnchorPane>
